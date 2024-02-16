@@ -12,12 +12,24 @@
     <div class="container page">
       <div class="row">
         <div class="col-md-9">
+          <form name="contact" netlify>
+            <p>
+              <label>Name <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Email <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
           <Suspense>
-            <ArticlesList
-              use-global-feed
-              use-my-feed
-              use-tag-feed
-            />
+            <ArticlesList use-global-feed use-my-feed use-tag-feed />
             <template #fallback>
               Articles are downloading...
             </template>
