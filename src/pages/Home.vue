@@ -18,18 +18,19 @@
           </template>
         </Suspense>
       </div>
+    </div>
 
-      <div class="col-md-3">
-        <div class="sidebar">
-          <Suspense>
-            <PopularTags />
-            <template #fallback>
-              Popular tags are downloading...
-            </template>
-          </Suspense>
-        </div>
+    <div class="col-md-3">
+      <div class="sidebar">
+        <Suspense>
+          <PopularTags />
+          <template #fallback>
+            Popular tags are downloading...
+          </template>
+        </Suspense>
       </div>
     </div>
+  </div>
   </div>
 </div></template>
 
